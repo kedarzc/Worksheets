@@ -1,0 +1,1 @@
+All ASCE7-05 Spreadsheets reviewed.

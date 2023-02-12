@@ -1,0 +1,1 @@
+All ASCE 7-10 spreadsheets reviewed.

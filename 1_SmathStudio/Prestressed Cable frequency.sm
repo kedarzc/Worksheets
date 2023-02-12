@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.98.6179.21440"?>
+<regions>
+  <settings>
+    <identity>
+      <id>1fd2cacd-c0b6-44c9-b523-8112297502f1</id>
+      <revision>7</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="true" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.98.6179.21440" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.98.6179.21440" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Text Region" version="1.10.6179.21446" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <region id="0" left="36" top="36" width="720" height="31" color="#000000" bgColor="#ffffff" fontSize="14">
+    <text lang="eng">
+      <p bold="true" underline="true">Calculating the frequency of vibration of a prestressed cable</p>
+    </text>
+  </region>
+  <region id="1" left="36" top="108" width="291" height="28" color="#000000" bgColor="#ffffff" fontSize="12">
+    <text lang="eng">
+      <p bold="true">Explanation of the variables</p>
+    </text>
+  </region>
+  <region id="2" left="36" top="135" width="200" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>L=Length of string (in)</p>
+    </text>
+  </region>
+  <region id="3" left="36" top="153" width="249" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>T=Tension in the string (psi)</p>
+    </text>
+  </region>
+  <region id="4" left="36" top="171" width="291" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>μ=Linear density of string (lb/in)</p>
+    </text>
+  </region>
+  <region id="5" left="36" top="189" width="187" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>m=mass of string (lb) </p>
+    </text>
+  </region>
+  <region id="6" left="36" top="207" width="521" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>n=number of harmonic (n=1 corresponds to the fundamental freq)</p>
+    </text>
+  </region>
+  <region id="7" left="36" top="252" width="72" height="28" color="#000000" bgColor="#ffffff" fontSize="12">
+    <text lang="eng">
+      <p bold="true">INPUTS</p>
+    </text>
+  </region>
+  <region id="8" left="36" top="279" width="73" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">L</e>
+        <e type="operand">57</e>
+        <e type="operand" style="unit">ft</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="9" left="36" top="306" width="115" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">T</e>
+        <e type="operand">200000</e>
+        <e type="operand" style="unit">lbf</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="10" left="36" top="333" width="131" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">m</e>
+        <e type="operand">8005.4286</e>
+        <e type="operand" style="unit">lb</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="11" left="36" top="360" width="43" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">n</e>
+        <e type="operand">1</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="12" left="36" top="396" width="234" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true">Calcuate the linear density</p>
+    </text>
+  </region>
+  <region id="13" left="45" top="423" width="152" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">μ</e>
+        <e type="operand">m</e>
+        <e type="operand">L</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">lb</e>
+        <e type="operand" style="unit">ft</e>
+        <e type="operator" args="2">/</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">140.4461</e>
+      </result>
+    </math>
+  </region>
+  <region id="14" left="36" top="486" width="193" height="24" color="#ff0000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true">Calcuate the frequency</p>
+    </text>
+  </region>
+  <region id="15" left="45" top="513" width="188" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">f.n</e>
+        <e type="operand">n</e>
+        <e type="operand">2</e>
+        <e type="operand">L</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">T</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">/</e>
+        <e type="function" preserve="true" args="1">sqrt</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">Hz</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">1.8776</e>
+      </result>
+    </math>
+  </region>
+</regions>

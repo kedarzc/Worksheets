@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.98.6179.21440"?>
+<regions>
+  <settings>
+    <identity>
+      <id>0025853a-c64e-452d-84b6-02a6bcd876f5</id>
+      <revision>7</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="true" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.98.6179.21440" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.98.6179.21440" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Text Region" version="1.10.6179.21446" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <region id="0" left="36" top="36" width="567" height="28" color="#000000" bgColor="#ffffff" fontSize="12">
+    <text lang="eng">
+      <p bold="true">Seismic Design Requirements for Nonstructural Components</p>
+    </text>
+  </region>
+  <region id="1" left="36" top="72" width="331" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p italic="true">Design According to ASCE7-10 Chapter 13</p>
+    </text>
+  </region>
+  <region id="2" left="36" top="108" width="422" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>MCE Spectral response Acceleration at Short Period</p>
+    </text>
+  </region>
+  <region id="3" left="459" top="108" width="85" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">S.S</e>
+        <e type="operand">0.094</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="4" left="459" top="135" width="85" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">S.1</e>
+        <e type="operand">0.064</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="5" left="36" top="144" width="397" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>MCE Spectral response Acceleration at 1s Period</p>
+    </text>
+  </region>
+  <region id="6" left="36" top="171" width="152" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>Building Category</p>
+    </text>
+  </region>
+  <region id="7" left="459" top="171" width="77" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Cat</e>
+        <e type="operand">III</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="8" left="36" top="198" width="94" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>Site Class</p>
+    </text>
+  </region>
+  <region id="9" left="459" top="198" width="68" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">Site</e>
+        <e type="operand">D</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="10" left="36" top="225" width="233" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>Component Importance Factor</p>
+    </text>
+  </region>
+  <region id="11" left="459" top="225" width="69" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">I.P</e>
+        <e type="operand">1.0</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="12" left="612" top="225" width="144" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>(Section 13.1.3)</p>
+    </text>
+  </region>
+  <region id="13" left="36" top="252" width="144" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>Site Coefficient</p>
+    </text>
+  </region>
+  <region id="14" left="459" top="252" width="69" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">F.a</e>
+        <e type="operand">1.6</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="15" left="612" top="252" width="127" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>(Table 11.4.1)</p>
+    </text>
+  </region>
+  <region id="16" left="36" top="279" width="144" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>Site Coefficient</p>
+    </text>
+  </region>
+  <region id="17" left="459" top="279" width="69" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">F.v</e>
+        <e type="operand">2.4</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="18" left="612" top="279" width="127" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>(Table 11.4.2)</p>
+    </text>
+  </region>
+  <region id="19" left="36" top="306" width="406" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>Adjusted MCE Spect. Resp. Acc. for Short Periods</p>
+    </text>
+  </region>
+  <region id="20" left="459" top="306" width="167" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">S.MS</e>
+        <e type="operand">F.a</e>
+        <e type="operand">S.S</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">0.1504</e>
+      </result>
+    </math>
+  </region>
+  <region id="21" left="630" top="306" width="111" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>(Eq. 11.4-1)</p>
+    </text>
+  </region>
+  <region id="22" left="36" top="342" width="398" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>Adjusted MCE Spect. Resp. Acc. for Long Periods</p>
+    </text>
+  </region>
+  <region id="23" left="459" top="342" width="167" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">S.M1</e>
+        <e type="operand">F.v</e>
+        <e type="operand">S.1</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">0.1536</e>
+      </result>
+    </math>
+  </region>
+  <region id="24" left="630" top="342" width="111" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>(Eq. 11.4-2)</p>
+    </text>
+  </region>
+  <region id="25" left="459" top="369" width="170" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">S.DS</e>
+        <e type="operand">2</e>
+        <e type="operand">3</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">S.MS</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">0.1003</e>
+      </result>
+    </math>
+  </region>
+  <region id="26" left="36" top="378" width="356" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>Design Spect. Resp. Acc. for Short Periods</p>
+    </text>
+  </region>
+  <region id="27" left="630" top="378" width="111" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>(Eq. 11.4-3)</p>
+    </text>
+  </region>
+  <region id="28" left="36" top="414" width="348" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>Design Spect. Resp. Acc. for Long Periods</p>
+    </text>
+  </region>
+  <region id="29" left="459" top="414" width="170" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">S.D1</e>
+        <e type="operand">2</e>
+        <e type="operand">3</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">S.M1</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">0.1024</e>
+      </result>
+    </math>
+  </region>
+  <region id="30" left="630" top="423" width="111" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>(Eq. 11.4-4)</p>
+    </text>
+  </region>
+  <region id="31" left="36" top="477" width="586" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true">Seismic Design Category based on Table 11.6-1, 11.6-2 and Section 11.6</p>
+    </text>
+  </region>
+  <region id="32" left="639" top="477" width="60" height="24" border="true" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">SDC</e>
+        <e type="operand">B</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+</regions>

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.6671.38791"?>
+<regions xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings dpi="96">
+    <identity>
+      <id>711f301a-4802-4ba3-b10e-3294cc691646</id>
+      <revision>8</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="true" viewMode="0" printGrid="False" printAreas="True" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.6671.38791" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.6671.38791" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Picture Region" version="1.10.6671.38794" guid="06b5df04-393e-4be7-9107-305196fcb861" />
+      <assembly name="Text Region" version="1.10.6671.38794" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <region id="0" left="18" top="54" width="225" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true" underline="true">Transformation of Stresses</p>
+    </text>
+  </region>
+  <region id="1" left="18" top="90" width="504" height="228" color="#000000" bgColor="#ffffff">
+    <picture>
+      <raw format="png" encoding="base64">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</raw>
+    </picture>
+  </region>
+  <region id="2" left="27" top="360" width="283" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p underline="true">Input the stresses on the element</p>
+    </text>
+  </region>
+  <region id="3" left="27" top="396" width="80" height="30" border="true" color="#000000" bgColor="#ffff80" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">σ.x</e>
+        <e type="operand">0</e>
+        <e type="operand" style="unit">MPa</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="4" left="27" top="432" width="88" height="30" border="true" color="#000000" bgColor="#ffff80" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">σ.y</e>
+        <e type="operand">10</e>
+        <e type="operand" style="unit">MPa</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="5" left="27" top="468" width="86" height="30" border="true" color="#000000" bgColor="#ffff80" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">τ.xy</e>
+        <e type="operand">0</e>
+        <e type="operand" style="unit">MPa</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="6" left="27" top="504" width="66" height="24" border="true" color="#000000" bgColor="#ffff80" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">θ</e>
+        <e type="operand">40</e>
+        <e type="operand" style="unit">°</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="7" left="18" top="558" width="214" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p underline="true">Transformed Stresses are </p>
+    </text>
+  </region>
+  <region id="8" left="18" top="603" width="456" height="49" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">σ.x1</e>
+        <e type="operand">σ.x</e>
+        <e type="operand">σ.y</e>
+        <e type="operator" args="2">+</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">/</e>
+        <e type="bracket">(</e>
+        <e type="operand">σ.x</e>
+        <e type="operand">σ.y</e>
+        <e type="operator" args="2">-</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">/</e>
+        <e type="bracket">(</e>
+        <e type="operand">2</e>
+        <e type="operand">θ</e>
+        <e type="operator" args="2">*</e>
+        <e type="function" args="1">cos</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">+</e>
+        <e type="operand">τ.xy</e>
+        <e type="operand">2</e>
+        <e type="operand">θ</e>
+        <e type="operator" args="2">*</e>
+        <e type="function" args="1">sin</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">+</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">ksi</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">0.5993</e>
+      </result>
+    </math>
+  </region>
+  <region id="9" left="18" top="675" width="444" height="49" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math decimalPlaces="3" trailingZeros="true">
+      <input>
+        <e type="operand">σ.y1</e>
+        <e type="operand">σ.x</e>
+        <e type="operand">σ.y</e>
+        <e type="operator" args="2">+</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">/</e>
+        <e type="bracket">(</e>
+        <e type="operand">σ.x</e>
+        <e type="operand">σ.y</e>
+        <e type="operator" args="2">-</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">/</e>
+        <e type="bracket">(</e>
+        <e type="operand">2</e>
+        <e type="operand">θ</e>
+        <e type="operator" args="2">*</e>
+        <e type="function" args="1">cos</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">-</e>
+        <e type="operand">τ.xy</e>
+        <e type="operand">2</e>
+        <e type="operand">θ</e>
+        <e type="operator" args="2">*</e>
+        <e type="function" args="1">sin</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">-</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">ksi</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">0.851</e>
+      </result>
+    </math>
+  </region>
+  <region id="10" left="18" top="747" width="405" height="49" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">τ.x1y1</e>
+        <e type="operand">σ.x</e>
+        <e type="operand">σ.y</e>
+        <e type="operator" args="2">-</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">/</e>
+        <e type="bracket">(</e>
+        <e type="operand">2</e>
+        <e type="operand">θ</e>
+        <e type="operator" args="2">*</e>
+        <e type="function" args="1">sin</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">τ.xy</e>
+        <e type="operand">2</e>
+        <e type="operand">θ</e>
+        <e type="operator" args="2">*</e>
+        <e type="function" args="1">cos</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">+</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">ksi</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">0.7142</e>
+      </result>
+    </math>
+  </region>
+  <region id="11" left="18" top="819" width="210" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p underline="true">Transformed Stresses are</p>
+    </text>
+  </region>
+  <region id="12" left="27" top="864" width="124" height="30" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">σ.x1</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">MPa</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">4.1318</e>
+      </result>
+    </math>
+  </region>
+  <region id="13" left="27" top="900" width="124" height="30" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">σ.y1</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">MPa</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">5.8682</e>
+      </result>
+    </math>
+  </region>
+  <region id="14" left="27" top="936" width="129" height="30" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">τ.x1y1</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">MPa</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">4.924</e>
+      </result>
+    </math>
+  </region>
+</regions>

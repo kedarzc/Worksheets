@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.6671.38791"?>
+<regions xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings dpi="96">
+    <identity>
+      <id>2a26724a-0ab4-4070-bfe3-9c7536d5571f</id>
+      <revision>7</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="true" viewMode="0" printGrid="False" printAreas="True" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.6671.38791" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.6671.38791" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Picture Region" version="1.10.6671.38794" guid="06b5df04-393e-4be7-9107-305196fcb861" />
+      <assembly name="Text Region" version="1.10.6671.38794" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <region id="0" left="18" top="225" width="174" height="34" color="#000000" bgColor="#ffffff" fontSize="16">
+    <text lang="eng">
+      <p bold="true" underline="true">Basic Inputs</p>
+    </text>
+  </region>
+  <region id="1" left="252" top="234" width="174" height="171" color="#000000" bgColor="#ffffff">
+    <picture>
+      <raw format="png" encoding="base64">iVBORw0KGgoAAAANSUhEUgAAAKYAAACjCAYAAAAARWXEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPfSURBVHhe7dYBahsxAETR3P/SKS5eumwEY8WRx43eA9XJRnVh8in++OSLjw+ztPkNDAizz29gQJh9fgMDtzCvh9ey+MA1RnG+nrUHRhEK87WsPSDMPmsPCLPP2gPC7LP2wDXC2/fCfC1rDxwhng+vZXHekjB5S8LkLW0d5jOfH332XGu7ZY+gfiKs63s9+378s82So4hWHp7jf8wnXN/r2ffjn62XfCYmIa5lWd6SMHlLwuQtCTPwObLD6oEwO6weCLPD6oEwO6weCLPD6oEwO6weCLPD6oEwO6weCLPD6oEwO6weCLPD6oEwO7Zb/Rba6sPztgxzxur7u5je8f66DWF2CDMQ5uvdNjnOo4QZrL6/gyPKmW2EGay+v4MjyplthBmsvv/bHUGezyOEGay+/9sdMZ7PI4QZrL6/i+kd76/bEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGaHMANhdggzEGZH2uX68+1WFGaHMANhdggzEGbHaJfbs+P59efbrTgbzur7uzjvcvv6utOX7//+cb/oOI+c7zj/vdF7XJ9971/5j80Ou/r+Ls67jDa6PttuxdWhzd7fxXmX0UbXZ9utuDq02fu7OO8y2uj6bLsVV4c2e38X511uX4/O2XYrXgdIVt/fxfSO99dtCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCLNDmIEwO4QZCPO1jj2ur8l2K64Obfb+b3fb43oeIcxg9f0dHEHObCPMYPX9HRxRzmwjzGD1/R0cUc5sI8xg9f0dHFHObLNlmKsPX83uYsVAaD9DmD9MmB1WD4TZYfVAmB1WD4TZYfVAmB1WD4TZYfVAmB1WD4TZYfVAmB1WD4TZYfVAmB1WD4TZYXXe0OfnH+KA5asYkYMLAAAAAElFTkSuQmCC</raw>
+    </picture>
+  </region>
+  <region id="2" left="18" top="261" width="130" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">E</e>
+        <e type="operand">10400000</e>
+        <e type="operand" style="unit">psi</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="3" left="18" top="279" width="74" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">L</e>
+        <e type="operand">10</e>
+        <e type="operand" style="unit">ft</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="4" left="18" top="297" width="98" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">b</e>
+        <e type="operand">0.719</e>
+        <e type="operand" style="unit">in</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="5" left="18" top="315" width="74" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">d</e>
+        <e type="operand">12</e>
+        <e type="operand" style="unit">in</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="6" left="18" top="369" width="151" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true">Moment of inertia</p>
+    </text>
+  </region>
+  <region id="7" left="18" top="396" width="174" height="50" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">I</e>
+        <e type="operand">d</e>
+        <e type="operand">b</e>
+        <e type="operand">3</e>
+        <e type="operator" args="2">^</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">12</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">in</e>
+        <e type="operand">4</e>
+        <e type="operator" args="2">^</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">0.3717</e>
+      </result>
+    </math>
+  </region>
+  <region id="8" left="18" top="468" width="193" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true">Critical Buckling Load</p>
+    </text>
+  </region>
+  <region id="9" left="27" top="495" width="224" height="59" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">P.cr</e>
+        <e type="operand">π</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">^</e>
+        <e type="operand">E</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">I</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">L</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">^</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">lbf</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">2649.4594</e>
+      </result>
+    </math>
+  </region>
+</regions>

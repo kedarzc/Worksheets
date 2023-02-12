@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>421040c6-f6c9-4da5-9d56-54312f607688</id>
+      <revision>3</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>3</exponentialThreshold>
+      <trailingZeros>true</trailingZeros>
+      <significantDigitsMode>true</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.8348.30405" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="9" top="45" width="135" height="23" border="true" color="#000000" bgColor="#ffff80" fontSize="10">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="background-color: #ffff80;">Defining custom unit</p>
+        </content>
+      </text>
+    </region>
+    <region left="36" top="63" width="106" height="33" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand" style="unit">Msi</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">psi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="9" top="117" width="190" height="23" border="true" color="#000000" bgColor="#ffff80" fontSize="10" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="background-color: #ffff80;">Composite Lamina Properties</p>
+        </content>
+      </text>
+    </region>
+    <region left="36" top="135" width="252" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" trailingZeros="false">
+        <input>
+          <e type="operand">E.11</e>
+          <e type="operand">40.393</e>
+          <e type="operand" style="unit">Msi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">2.785</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="306" top="135" width="252" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">G.12</e>
+          <e type="operand">0.818</e>
+          <e type="operand" style="unit">Msi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">5.6399</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="585" top="135" width="90" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">ν.12</e>
+          <e type="operand">0.303</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="153" width="90" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">ν.13</e>
+          <e type="operand">0.303</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="171" width="90" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">ν.23</e>
+          <e type="operand">0.303</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="36" top="180" width="244" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">E.22</e>
+          <e type="operand">0.922</e>
+          <e type="operand" style="unit">Msi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">6.357</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="306" top="180" width="252" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">G.13</e>
+          <e type="operand">0.764</e>
+          <e type="operand" style="unit">Msi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">5.2676</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="225" width="244" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">E.33</e>
+          <e type="operand">0.922</e>
+          <e type="operand" style="unit">Msi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">6.357</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="306" top="225" width="244" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">G.23</e>
+          <e type="operand">0.295</e>
+          <e type="operand" style="unit">Msi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">2.034</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="279" width="139" height="23" border="true" color="#000000" bgColor="#ffff80" fontSize="10" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="background-color: #ffff80;">Composite Strengths</p>
+        </content>
+      </text>
+    </region>
+    <region left="36" top="315" width="242" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">S.11T</e>
+          <e type="operand">268</e>
+          <e type="operand" style="unit">ksi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">1.8478</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="369" width="258" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">S.11C</e>
+          <e type="operand">131.8</e>
+          <e type="operand" style="unit">ksi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">9.0873</e>
+          <e type="operand">10</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="414" width="242" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="4" trailingZeros="false">
+        <input>
+          <e type="operand">S.22T</e>
+          <e type="operand">2.8</e>
+          <e type="operand" style="unit">ksi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">1.9305</e>
+          <e type="operand">10</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="468" width="258" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">S.22C</e>
+          <e type="operand">30.02</e>
+          <e type="operand" style="unit">ksi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">2.0698</e>
+          <e type="operand">10</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="522" width="252" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="4" trailingZeros="false">
+        <input>
+          <e type="operand">S.12</e>
+          <e type="operand">10.99</e>
+          <e type="operand" style="unit">ksi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">7.5773</e>
+          <e type="operand">10</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="567" width="252" height="51" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" trailingZeros="false">
+        <input>
+          <e type="operand">S.23</e>
+          <e type="operand">10.99</e>
+          <e type="operand" style="unit">ksi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mN</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">7.5773</e>
+          <e type="operand">10</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="630" width="138" height="23" border="true" color="#000000" bgColor="#ffff80" fontSize="10" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="background-color: #ffff80;">All Properties in MPa</p>
+        </content>
+      </text>
+    </region>
+    <region left="36" top="657" width="151" height="39" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">E.11</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">2.785</e>
+          <e type="operand">10</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="666" width="147" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">S.11T</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">1847.795</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="684" width="149" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">E.22</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">6356.9662</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="684" width="139" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">S.11C</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">908.729</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="702" width="149" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">E.33</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">6356.9662</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="702" width="139" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">S.22T</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">19.3053</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="720" width="149" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">G.12</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">5639.9115</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="720" width="147" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">S.22C</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">206.9806</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="738" width="149" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">G.13</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">5267.5946</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="738" width="133" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">S.12</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">75.7734</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="756" width="149" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">G.23</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">2033.9534</e>
+        </result>
+      </math>
+    </region>
+    <region left="207" top="756" width="133" height="30" color="#000000" fontSize="10">
+      <math significantDigitsMode="false" exponentialThreshold="5" trailingZeros="false">
+        <input>
+          <e type="operand">S.23</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">MPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">75.7734</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

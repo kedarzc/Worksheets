@@ -1,0 +1,971 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.6622.8829"?>
+<regions xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings dpi="96">
+    <identity>
+      <id>1ebb726e-004a-468e-b663-96dd57ff10ff</id>
+      <revision>4</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="true" viewMode="0" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.6622.8829" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.6622.8829" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Picture Region" version="1.10.6622.8831" guid="06b5df04-393e-4be7-9107-305196fcb861" />
+      <assembly name="Special Functions" version="1.11.6622.8831" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="Text Region" version="1.10.6622.8831" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <region id="0" left="72" top="72" width="191" height="195" color="#000000" bgColor="#ffffff">
+    <picture>
+      <raw format="png" encoding="base64">iVBORw0KGgoAAAANSUhEUgAAAWsAAAFzCAYAAAD4wyiOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAACzZSURBVHhe7d0JvFXj/sfxW5o1z1GiUcZQREopCnndupFEyRCJDDfdytzFlWu4zUTJeFFkaJDQnG6ieURUKlFKpUHk+f9/z3rWWWef1jlnn87ez95rrc/79Vqv03nOLqfj+X1b+1nP8BcFAEh7hDUABABhDQABQFgDQAAQ1gAQAIQ1AAQAYQ0AAUBYA0AAENYAEACENQAEAGENAAFAWANAABDWABAAhDUABABhDQABQFgDQAAQ1gAQAIQ1AAQAYQ0AAUBYA0AAENYAEACENQAEAGENAAFAWANAABDWABAAhDUABABhHVLjxo1TgwYNUjt37jQtAIKMsA6huXPnqqOOOkr95S9/UevWrTOtAIKMsA6ZPXv2qDp16uigJqyB8CCsQ6Z79+6qcOHChDUQMoR1iEyYMEEdffTR6h//+AdhDeRix44dumaeeeYZfcmvpS1dEdYhsXnzZlWhQgU1ZswY9cILLxDWQDYOHTqkBg4cqG9sWrdurf75z3+qRx99VF100UW67eGHH1Z//PGHeXX6IKxD4M8//1SXXnqpat++vf6csAayd8stt+jakDrJ6umnn9Zfu/nmm01L+iCsQ2DIkCHqmGOOUdu3b9efE9aAvxkzZui6kLtoP3LjU69ePf2aefPmmdb0QFgH3KpVq1SJEiXUlClTTAthDWSnZ8+eui769OljWg531VVX6dc88MADpiU9ENYBdvDgQdW4cWP197//3bQ4CGvAX4cOHXRdtG3b1rQcrmPHjvo1Mo6dTgjrAOvfv786+eST1f79+02Lg7AG/N111126LgoWLOg7zCEPFmVIsUCBAmrRokWmNT0Q1gElqxRl+GPp0qWmxUNYA/7mz5+fURtVq1ZVK1asMF9xPPnkk/prvXr1Mi3pg7AOIHeVojxY9ENYA9m76aabMuqjdOnSatKkSbr93Xff1QvK5OsyvS/dENYB1K1bN/00W55c+yGsgez99ttveszarRHZR+fGG29UFStWVK+++qp5VfohrANm7dq1uoPJ5P1y5cr5XjI84nbEMmXK6La6deuaPwGAPJy/9tprM+pELnn4eODAAfOK9ENYB4yMUWfuYPFelSpVMn8CACHPfUqVKqUfJrp10rRpU/Xjjz+aV6QXwjpgZLz6448/zvGSqXxu53vllVd026xZs8yfAEC2ZZB3ndOmTVOvvfaaKlq0aEbNyKKYrVu3mlemD8I6hBizBrIn49JyNy2bN7lmz56t99Zx6+aMM87QQyXphLAOIcIa8CcrfosUKaKOPfbYwzZrWrlypX6+49bO8OHDzVfSA2EdQoQ14K9r1666Lm677TbTEkuGC90hEbm7TieEdQgR1oC/2rVr67qQ3fWyc//99+vXFCtWLK3mWxPWISSbOsk+vXJt2bLFtAKoXr26DmLZwzo7n3/+uX6NTI9NJ4Q1gMi4+uqrdRB37tzZtBzus88+069p166daUkPhDWAyFi+fLkek5aFY+vXrzetsWSzp0KFCqkFCxaYlvRAWAOIlHHjxunAbtCgQcxGaDJV74knnlDFixdPy2XnhDWAyJFpejIzRFb2Smg3atRIb44mbVl34ksXhDWASNu3b5++0h1hDQABQFgDQAAQ1gAQAIR1yLz88svqsssu4+LiivNq2bJljgfopgvCOiRkWWzv3r31ZH65mjdvri6//HIuLq4crmbNmuk51XJaTLojrENAjimSlVnS4eTEcwnrL7/80nwVgJ+PPvpIHz5w3HHH6UUy6Y6wDrhff/1VXXLJJXrbxzfffFMtXLiQsAZyIYcPyB11+/bt1eOPP552+4D4IawDbMeOHeq8887THW3q1Km6jbAGsieHTD/00EO6RmTYUPa0lh34CGskjeymd9ppp6ny5cvrjWdchDXgT4YL5ZBcOSVGAttFWCNpVq9ercfZatasqdasWWNaHYQ1cDg5u1RmfMieIK+//rppdRDWSAoJY3c/g40bN5pWD2ENxNq8ebNq2LChPrJr5syZptVDWCPhpk+frkqXLq0aN26stm3bZlpjEdaARzZlknehcubikiVLTGsswhoJNWHCBH3MUKtWrdTu3btN6+EIa8AhNzdly5ZVp556qvr+++9N6+EIayTMyJEjVcGCBVWXLl1yPR6fsAaUGj9+fMbNza5du0yrP8IaCTFo0CAdvrfffntch3cS1oi6wYMH65ub6667LtebG0FYI19kPujdd9+tg7dfv36mNXeENaJK5kz36tUro2akhuJBWOOIyXxQOdBTlo8/99xzpjU+hDWiaO/evXqvD6mZ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</raw>
+    </picture>
+  </region>
+  <region id="1" left="72" top="306" width="272" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.1</e>
+        <e type="operand">1</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="2" left="450" top="315" width="101" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">1</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">1</e>
+        <e type="operand">1</e>
+        <e type="function" args="3">P1</e>
+      </input>
+    </math>
+  </region>
+  <region id="3" left="72" top="342" width="270" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.2</e>
+        <e type="operand">1</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="4" left="450" top="351" width="101" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">1</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">1</e>
+        <e type="operand">1</e>
+        <e type="function" args="3">P2</e>
+      </input>
+    </math>
+  </region>
+  <region id="5" left="72" top="378" width="268" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.3</e>
+        <e type="operand">1</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="6" left="450" top="378" width="101" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">1</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">1</e>
+        <e type="operand">1</e>
+        <e type="function" args="3">P3</e>
+      </input>
+    </math>
+  </region>
+  <region id="7" left="72" top="414" width="270" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.4</e>
+        <e type="operand">1</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="8" left="450" top="414" width="101" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">1</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">1</e>
+        <e type="operand">1</e>
+        <e type="function" args="3">P4</e>
+      </input>
+    </math>
+  </region>
+  <region id="9" left="450" top="441" width="101" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">1</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">1</e>
+        <e type="operand">1</e>
+        <e type="function" args="3">P5</e>
+      </input>
+    </math>
+  </region>
+  <region id="10" left="72" top="450" width="274" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.5</e>
+        <e type="operand">1</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="11" left="450" top="477" width="101" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">1</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">1</e>
+        <e type="operand">1</e>
+        <e type="function" args="3">P6</e>
+      </input>
+    </math>
+  </region>
+  <region id="12" left="72" top="486" width="272" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.6</e>
+        <e type="operand">1</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="13" left="450" top="513" width="101" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">1</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">1</e>
+        <e type="operand">1</e>
+        <e type="function" args="3">P7</e>
+      </input>
+    </math>
+  </region>
+  <region id="14" left="72" top="522" width="270" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.7</e>
+        <e type="operand">1</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="15" left="450" top="549" width="101" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">1</e>
+        <e type="operator" args="1">-</e>
+        <e type="operand">1</e>
+        <e type="operand">1</e>
+        <e type="function" args="3">P8</e>
+      </input>
+    </math>
+  </region>
+  <region id="16" left="72" top="558" width="272" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.8</e>
+        <e type="operand">1</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="17" left="72" top="639" width="324" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true" underline="true">The Derivatives of the shape functions</p>
+    </text>
+  </region>
+  <region id="18" left="72" top="666" width="258" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.1</e>
+        <e type="operand">ξ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="19" left="72" top="702" width="244" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.1</e>
+        <e type="operand">η</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="20" left="72" top="738" width="244" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.1</e>
+        <e type="operand">μ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="21" left="72" top="783" width="256" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.2</e>
+        <e type="operand">ξ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="22" left="72" top="819" width="256" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.2</e>
+        <e type="operand">η</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="23" left="72" top="855" width="242" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.2</e>
+        <e type="operand">μ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="24" left="72" top="1053" width="254" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.3</e>
+        <e type="operand">ξ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="25" left="72" top="1089" width="254" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.3</e>
+        <e type="operand">η</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="26" left="72" top="1125" width="254" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.3</e>
+        <e type="operand">μ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="27" left="72" top="1170" width="256" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.4</e>
+        <e type="operand">ξ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="28" left="72" top="1206" width="242" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.4</e>
+        <e type="operand">η</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="29" left="72" top="1242" width="256" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.4</e>
+        <e type="operand">μ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="30" left="72" top="1287" width="246" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.5</e>
+        <e type="operand">ξ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="31" left="72" top="1323" width="246" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.5</e>
+        <e type="operand">η</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="32" left="72" top="1359" width="246" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.5</e>
+        <e type="operand">μ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="33" left="72" top="1413" width="244" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.6</e>
+        <e type="operand">ξ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="34" left="72" top="1449" width="258" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.6</e>
+        <e type="operand">η</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="35" left="72" top="1485" width="244" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.6</e>
+        <e type="operand">μ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="36" left="72" top="1539" width="242" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.7</e>
+        <e type="operand">ξ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="37" left="72" top="1575" width="256" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.7</e>
+        <e type="operand">η</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="38" left="72" top="1611" width="256" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.7</e>
+        <e type="operand">μ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+  <region id="39" left="72" top="1665" width="244" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.8</e>
+        <e type="operand">ξ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="40" left="72" top="1701" width="244" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.8</e>
+        <e type="operand">η</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">μ</e>
+        <e type="operator" args="2">-</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+      </result>
+    </math>
+  </region>
+  <region id="41" left="72" top="1737" width="258" height="44" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">ξ</e>
+        <e type="operand">η</e>
+        <e type="operand">μ</e>
+        <e type="function" args="3">N.8</e>
+        <e type="operand">μ</e>
+        <e type="function" args="2">diff</e>
+      </input>
+      <result action="symbolic">
+        <e type="operand">1</e>
+        <e type="operand">ξ</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operand">1</e>
+        <e type="operand">η</e>
+        <e type="operator" args="2">+</e>
+        <e type="bracket">(</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">8</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="1">-</e>
+      </result>
+    </math>
+  </region>
+</regions>

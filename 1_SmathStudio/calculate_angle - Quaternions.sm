@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7822.147"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>28535dcd-f576-4a60-9ea8-196b3e6fe4da</id>
+      <revision>19</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7822.147" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.7822.147" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.7822.147" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="18" top="63" width="245" height="63" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m.rot</e>
+          <e type="operand">0.707107</e>
+          <e type="operand">0.707107</e>
+          <e type="operand">0</e>
+          <e type="operand">0.707107</e>
+          <e type="operand">0.707107</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">3</e>
+          <e type="operand">3</e>
+          <e type="function" args="11">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="135" width="272" height="39" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Tr</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">3</e>
+          <e type="operand">3</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="180" width="198" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ</e>
+          <e type="operand">Tr</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">acos</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">deg</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">180</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="225" width="290" height="109" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ω</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operand">θ</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">3</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">2</e>
+          <e type="operand">3</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="27" top="504" width="96" height="23" color="#000000" fontSize="10">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>
+            <span style="font-weight: bold;">Quaternions</span> </p>
+        </content>
+      </text>
+    </region>
+    <region left="27" top="540" width="303" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">S</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">3</e>
+          <e type="operand">3</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0</e>
+        </result>
+      </math>
+    </region>
+    <region left="27" top="585" width="119" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">q.w</e>
+          <e type="operand">0.25</e>
+          <e type="operand">S</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0</e>
+        </result>
+      </math>
+    </region>
+    <region left="27" top="612" width="187" height="32" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ</e>
+          <e type="operand">2</e>
+          <e type="operand">q.w</e>
+          <e type="function" args="1">acos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">deg</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">180</e>
+        </result>
+      </math>
+    </region>
+    <region left="27" top="639" width="192" height="56" color="#000000" fontSize="10">
+      <math error="57" errorLocation="11">
+        <input>
+          <e type="operand">q.x</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">S</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">#</e>
+        </result>
+      </math>
+    </region>
+    <region left="27" top="693" width="192" height="56" color="#000000" fontSize="10">
+      <math error="57" errorLocation="11">
+        <input>
+          <e type="operand">q.x</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">S</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">#</e>
+        </result>
+      </math>
+    </region>
+    <region left="27" top="747" width="192" height="56" color="#000000" fontSize="10">
+      <math error="57" errorLocation="11">
+        <input>
+          <e type="operand">q.x</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">2</e>
+          <e type="operand">3</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">m.rot</e>
+          <e type="operand">3</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">S</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">#</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
